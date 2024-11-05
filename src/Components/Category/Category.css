@@ -1,0 +1,141 @@
+.category{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../../assets/categoryBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 160vh;
+    width: 100vw;
+}
+
+.c-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 7rem;
+}
+.c-heading p{
+    color: #b99272;
+}
+
+.c-menu{
+    display: flex;
+    background-color: black;
+    background-image: url('../../assets/menu_logo.png');
+    background-size: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 3rem;
+    height: 110vh;
+    width: 90vw;
+}
+
+.c-menu-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    
+}
+
+.c-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem ;
+    gap: 1rem;
+}
+.item-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.c-menu-item img {
+    
+    width: 30%;
+    height: 60%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.c-menu-item img:hover {
+    transform: scale(1.03);
+}
+.c-menu-item h2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.c-menu-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: grey;
+}
+
+.c-menu-item p {
+    font-size: 1rem;
+    color: #b99272;
+}
+
+@media (max-width: 1024px) {
+    .c-heading{
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category {
+        height: auto;
+        padding: 1rem;
+        background-position: center;
+    }
+
+    .c-heading {
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .c-menu {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .c-menu-list {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 1rem;
+    }
+
+    .c-menu-item {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .c-menu-item img {
+        width: 55%;
+        height: auto;
+    }
+
+    .c-menu-item h2 {
+        font-size: 1.3rem;
+    }
+
+    .c-menu-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .c-menu-item p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

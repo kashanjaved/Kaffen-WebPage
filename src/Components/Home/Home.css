@@ -1,0 +1,144 @@
+.home{
+    display: flex;
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+    margin-top: 10rem;
+
+}
+.awssld__bullets {
+    display: none !important; /* Hide the dots */
+}
+
+/* You can also try targeting the timer if necessary */
+.awssld-timer {
+    display: none !important; /* Hide the timer if you want */
+}
+
+.autoplay-slider img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.slide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-align: left;
+    color: white; /* Change to your preferred color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional for better readability */
+    white-space: pre-line;
+}
+
+.content-overlay p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    color: white;
+}
+
+.content-overlay h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.content-overlay button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #b99272;
+    color: white;
+    width: 10rem;
+    height: 3.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.content-overlay .button2{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #0e1317;
+    color: white;
+    width: 10rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-overlay button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #b99272;
+}
+
+@media (max-width: 425px) {
+    .home {
+        height: 60vh; /* Allow height to adjust based on content */
+        margin-top: 5rem; /* Reduce margin for smaller screens */
+    }
+
+    .content-overlay {
+        top: 20%; /* Adjust vertical positioning */
+        left: 5%; /* Reduce left margin */
+        right: 5%; /* Add right margin */
+        text-align: center; /* Center text */
+    }
+
+    .content-overlay h1 {
+        font-size: 2.5rem; /* Smaller font size for headers */
+        margin-top: -3rem;
+    }
+
+    .content-overlay p {
+        font-size: 0.8rem; /* Adjust paragraph font size */
+        margin-top: 2rem;
+    }
+
+    .content-overlay button {
+        width: 40%; 
+        margin: 0.5rem 0; 
+    }
+    .content-overlay button:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .content-overlay .button2 {
+        width: 40%;
+        margin: 0.5rem 0; 
+    }
+}
+@media (max-width: 375px) {
+    .content-overlay p {
+        font-size: 0.8rem; 
+        margin-bottom: 1rem;
+        
+    }
+    .content-overlay h1 {
+        font-size: 2rem; 
+        margin-top: 1rem;
+    }
+    .content-overlay button {
+        width: 50%; 
+        height: 4rem;
+        cursor: pointer;
+    }
+    .content-overlay .button2 {
+        width: 50%;
+        height: 4rem;
+        cursor: pointer;
+    }
+    .home{
+        height: 70vh;
+    }
+}
+

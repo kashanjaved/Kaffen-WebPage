@@ -1,0 +1,61 @@
+.envato {
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px; /* Set desired height */
+    background-color: #262626; /* Your desired background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 1000;
+  }
+  
+  
+  .e-logo {
+    display: flex;
+    height: 40px; 
+    width: auto; 
+  }
+  
+  .e-btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 2rem; 
+    width: 100px; 
+    background-color: #82b440; 
+    cursor: pointer; 
+    
+    border: #82b440;
+    border-radius: 5px;
+    color: white;
+  }
+
+  @media (max-width: 425px) {
+    .envato {
+        height: 57px;
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    .e-logo {
+        height: 30px; /* Reduce logo size */
+    }
+
+    .e-btn {
+        height: 1.8rem;
+        width: 80px; /* Reduce button width */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+}
+@media (max-width: 320px) {
+    .e-logo{
+      height: 23px;
+    }
+}
+
+
+  

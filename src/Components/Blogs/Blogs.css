@@ -1,0 +1,235 @@
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
+    width: 100vw;
+    background-color: black;
+}
+.b-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.b-top p{
+    color: #b99272;
+    font-size: 1.5rem;
+}
+.b-top h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.blog-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-left: 3rem;
+   
+}
+.blog-cards img{
+    height: 25rem;
+    width: 85%;
+    opacity: 0.4;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-cards img:hover {
+    transform: scale(1.06);
+}
+
+.b-card1{
+    display: flex;
+    position: relative;
+}
+.b-card1-data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+.b-card1-data h1{
+    width: 13rem;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.b-card1-data p{
+    color: grey;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.b-card2{
+    display: flex;
+    position: relative;
+}
+.b-card2-data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+.b-card2-data h1{
+    width: 13rem;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.b-card2-data p{
+    color: grey;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.b-card3{
+    display: flex;
+    position: relative;
+}
+.b-card3-data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+}
+.b-card3-data h1{
+    width: 13rem;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.b-card3-data p{
+    color: grey;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.blogs button{
+    display: flex;
+    align-items: center; /* Center the button content vertically */
+    justify-content: center; /* Center the button content horizontally */
+    height: 3rem; /* Set a height for the button */
+    width: 9rem; /* Set a width for the button */
+    background-color: #b99272; /* Optional: Add a background color for the button */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    margin-right: 5rem;
+    border: #b99272;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+.blogs button:hover{
+    background-color: white;
+    color: #b99272;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .b-card1-data h1{
+        width: 10rem;
+    }
+    .b-card2-data h1{
+        width: 10rem;
+    }
+    .b-card3-data h1{
+        width: 10rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .blogs {
+        height: auto; /* Adjust height to auto to fit content */
+        padding: 2rem 0; /* Add padding for spacing */
+    }
+
+    .b-top {
+        margin-bottom: 2rem; /* Add margin below the top section */
+    }
+
+    .b-top p {
+        font-size: 1.2rem; /* Decrease font size for paragraph */
+    }
+
+    .b-top h1 {
+        font-size: 2rem; /* Decrease font size for header */
+    }
+
+    .blog-cards {
+        flex-direction: column; /* Stack blog cards vertically */
+        align-items: center; /* Center align for better visibility */
+        margin-left: 2rem; /* Remove left margin */
+        margin-top: 2rem; /* Reduce margin-top */
+    }
+
+    .blog-cards img {
+        height: auto; /* Allow height to adjust */
+        width: 90%; /* Adjust width to fit screen */
+        max-height: 20rem; /* Set a max height for images */
+        opacity: 0.4;
+    }
+
+    .b-card1, .b-card2, .b-card3 {
+        width: 90%; /* Set card width to fit screen */
+        margin-bottom: 1.5rem; /* Add margin between cards */
+    }
+
+    .b-card1-data, .b-card2-data, .b-card3-data {
+        left: 0; /* Align text to the left */
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    .b-card1-data h1,
+    .b-card2-data h1,
+    .b-card3-data h1 {
+        width: 18rem; 
+        font-size: 18px; 
+    }
+
+    .b-card1-data p,
+    .b-card2-data p,
+    .b-card3-data p {
+        font-size: 0.9rem;
+    }
+
+    .blogs button {
+        width: 50%; 
+        margin: 1rem 0;
+        font-size: 12px; 
+    }
+}
+@media (max-width: 375px) {
+    .b-top h1 {
+        font-size: 1.3rem; 
+    }
+    .b-card1-data h1,
+    .b-card2-data h1,
+    .b-card3-data h1 {
+        width: 13rem; 
+        font-size: 15px; 
+        margin-top: -2.5rem;
+        position: absolute;
+    }
+    .b-card1-data p,
+    .b-card2-data p,
+    .b-card3-data p {
+        font-size: 0.5rem;
+        
+    }
+}

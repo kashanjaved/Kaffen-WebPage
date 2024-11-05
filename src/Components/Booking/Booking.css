@@ -1,0 +1,101 @@
+.booking { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100vw;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/cta_bg.jpg');
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.booking-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 4rem;
+    
+}
+.booking-left p{
+    color: #b99272;
+    font-size: 1.5rem;
+    
+}
+.booking-left h1{
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.booking-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}.booking-right button{
+    display: flex;
+    align-items: center; /* Center the button content vertically */
+    justify-content: center; /* Center the button content horizontally */
+    height: 3rem; /* Set a height for the button */
+    width: 13rem; /* Set a width for the button */
+    background-color: #b99272; /* Optional: Add a background color for the button */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    margin-right: 5rem;
+    border: #b99272;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+.booking-right button:hover{
+    background-color: white;
+    color: #b99272;
+    transition: 0.5s;
+}
+
+@media (max-width: 425px) {
+    .booking {
+        flex-direction: column; /* Stack the left and right sections vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 2rem 0; /* Add some padding for spacing */
+    }
+
+    .booking-left {
+        margin-left: 0; /* Remove left margin */
+        align-items: center; /* Center align the content */
+        text-align: center; /* Center align text for smaller screens */
+        padding: 1rem; /* Add padding for better spacing */
+    }
+
+    .booking-left p {
+        font-size: 1.2rem; /* Decrease font size for paragraph */
+        margin-bottom: 0.5rem; /* Add margin below paragraph */
+    }
+
+    .booking-left h1 {
+        font-size: 1.5rem; /* Decrease font size for header */
+    }
+
+    .booking-right {
+        margin-top: 0rem; /* Add margin above the right section */
+        width: 100%; /* Full width for right section */
+        justify-content: center; /* Center the content */
+    }
+
+    .booking-right button {
+        width: 50%; 
+        margin-right: 0; 
+        margin-top: 0rem; 
+        font-size: 12px; 
+    }
+}

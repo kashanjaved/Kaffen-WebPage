@@ -1,0 +1,170 @@
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+   
+}
+.s-one{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.s-one img{
+    width: 12rem;
+    height: 15rem;
+    object-fit: cover;
+    opacity: 0.5; /* Lower opacity by default */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+.s-one:hover img {
+    transform: scale(1.03); /* Slight zoom-in effect */
+}
+.overlay {
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    bottom: 1rem;
+    width: 52%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border-radius: 8px; 
+    border: 1px solid #b99272;
+}
+
+.icon-class {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media (max-width: 1360px) {
+    .s-one img {
+        width: 20rem ;
+        height: 17rem ;
+   }
+   .overlay {
+    width: 60%;
+    top: 0.7rem; 
+    left: 6rem; 
+    right: 1rem;
+    height: auto;
+    padding: 1rem; 
+}
+}
+@media (max-width: 1280px) {
+    .s-one{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: -4rem;
+    }
+    .s-one img {
+        width: 18rem ;
+        height: 17rem ;
+   }
+    .overlay {
+        width: 57%;
+        top: 0.7rem; 
+        left: 6.5rem; 
+        right: 1rem;
+        height: auto;
+        padding: 1rem; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .s-one img {
+         width: 15rem ;
+         height: 17rem ;
+    }
+    .overlay {
+        width: 53%;
+        top: 0.7rem; 
+        left: 6rem; 
+        right: 1rem;
+        height: auto;
+        padding: 1rem; 
+    }
+}
+@media (max-width: 768px) {
+    .overlay {
+        width: 67%;
+        top: 0.7rem; 
+        left: 2.5rem; 
+        right: 1rem;
+        height: auto;
+        padding: 1rem; 
+    }
+}
+@media (max-width: 425px) {
+    .services {
+        flex-direction: column; 
+        height: auto; 
+        padding: 2rem 0; 
+    }
+
+    .s-one {
+        width: 100%; 
+        margin: 1rem 0; 
+        position: relative;
+    }
+
+    .s-one img {
+        width: 15rem;
+        height: 10rem; 
+        object-fit: cover;
+    }
+
+    .overlay {
+        top: 0.5rem; 
+        left: 6.5rem; 
+        right: 1rem;
+        height: auto;
+        padding: 1rem; 
+        width: 13.5rem;
+    }
+
+    .icon-class {
+        font-size: 1.5rem; 
+    }
+
+    .overlay span {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 375px) {
+    .overlay {
+        top: 1rem; 
+        left: 5rem; 
+        right: 3rem;
+        height: auto;
+        padding: 1rem; 
+    }
+}
+@media (max-width: 320px) {
+    .overlay {
+        top: 1rem; 
+        left: 3rem; 
+        right: 3rem;
+        height: auto;
+        padding: 1rem; 
+    }
+}

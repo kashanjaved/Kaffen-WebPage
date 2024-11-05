@@ -1,0 +1,125 @@
+/* src/Components/Slider/Slider.css */
+.slider {
+    width: 100vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+    height: 130vh;
+    background-color: rgb(17, 16, 16);
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-top: 3rem;
+}
+
+/* Zigzag effect */ 
+.slide:nth-child(odd) .slider img {
+    margin-top: 3rem;
+    height: 90%;
+}
+.slide:nth-child(even) .slider img {
+    margin-top: -1.5rem;
+    height: 90%;
+
+}
+
+/* Hover effect: slight zoom */
+.slide:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.slide span {
+    display: none;
+    
+}
+
+.slide:hover span {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #b99272 ;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide:hover img {
+    opacity: 0.4; /* Show overlay on hover */
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .slide span {
+        display: none;
+        
+    }
+    
+    .slide:hover span {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        padding: 0.5rem;
+        border: 1px solid #b99272 ;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .slide:hover img {
+        opacity: 0.4; /* Show overlay on hover */
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 425px) {
+    .slider {
+        height: 70vh; /* Reduce height on smaller screens */
+        padding-top: 1rem; /* Adjust padding */
+    }
+
+    .slide {
+        margin-top: 1.5rem; /* Reduce margin */
+    }
+
+    .slide img {
+        height: 50vh; /* Allow height to adjust */
+        max-height: 70vh; /* Limit max height to keep it contained */
+    }
+
+    .slide span {
+        font-size: 1rem; /* Smaller font size for span */
+        padding: 0.25rem; /* Adjust padding */
+    }
+
+    .slide:hover span {
+        left: 5%; /* Adjust position on hover */
+        top: 5%;
+        width: 90%; /* Slightly adjust width */
+        height: 90%; /* Adjust height */
+    }
+}
+@media (max-width: 375px) {
+    
+}

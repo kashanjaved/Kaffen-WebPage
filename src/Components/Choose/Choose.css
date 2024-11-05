@@ -1,0 +1,138 @@
+.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+.choose-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+.choose-left img{
+    width: 70%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.choose-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.choose-right :nth-child(1){
+    font-size: 1rem;
+    color: #b99272;
+    font-weight: 500;
+}
+.choose-right :nth-child(2){
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+}
+.choose-right :nth-child(3){
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+    margin-top: 1rem;
+    width: 30rem;
+}
+.choose-icons{
+    display: flex;
+    flex-direction: column;
+}
+.choose-right button{
+    display: flex;
+    align-items: center; /* Center the button content vertically */
+    justify-content: center; /* Center the button content horizontally */
+    height: 3rem; /* Set a height for the button */
+    width: 9rem; /* Set a width for the button */
+    background-color: #b99272; /* Optional: Add a background color for the button */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    margin-right: 5rem;
+    border: #b99272;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.choose-right button:hover{
+    background-color: white;
+    color: #b99272;
+    transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+    .choose-right :nth-child(2){
+        font-size: 2rem;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .choose {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .choose-left,
+    .choose-right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .choose-left img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .choose-right :nth-child(2) {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .choose-right :nth-child(3) {
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .choose-icons {
+        align-items: center;
+    }
+
+    .choose-right button {
+        width: 30%;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .choose-right button {
+        width: 40%;
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 375px) {
+
+}

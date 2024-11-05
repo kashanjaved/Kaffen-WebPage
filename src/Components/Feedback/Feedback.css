@@ -1,0 +1,144 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-image: url('../../assets/feedbackBG.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 140vh;
+    width: 100vw;
+}
+.f-top{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.f-top p{
+    color: #b99272;
+}
+.f-top h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.f-swiper {
+    margin-top: 5rem;
+    width: 80%;
+    position: relative;
+ }
+ 
+ .f-card {
+     display: flex;
+     position: relative;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #0E1317;
+     height: 25rem;
+     margin-bottom: 2rem;
+     
+ }
+ .f-card img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    top: 0rem;
+    position: absolute;
+ }
+.f-card p{
+    width: 80%;
+    text-align: center;
+    color: grey;
+    margin-top: 8rem;
+}
+.f-card h2{
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.f-card h3{
+    color: #b99272;
+    margin-top: 0.5rem;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    color: #b99272;
+    position: absolute;
+    top: 6rem;
+}
+.swiper-pagination-bullet{
+    background-color: white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #b99272;
+}
+
+@media (max-width: 425px) {
+    .feedback {
+        height: auto; /* Adjust height to auto to fit content */
+        padding: 2rem 0; /* Add padding for spacing */
+    }
+
+    .f-top {
+        margin-top: 0.5rem;
+    }
+
+    .f-top h1 {
+        font-size: 2rem; /* Decrease font size */
+    }
+    .f-swiper {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 1rem;
+        position: relative;
+     }
+
+    .f-card {
+        height: 27rem; /* Allow card height to adjust */
+        padding: 1rem; /* Add some padding inside cards */
+    }
+
+    .f-card img {
+        width: 4rem; /* Adjust image size */
+        height: 4rem; /* Adjust image size */
+    }
+
+    .f-card p {
+        margin-top: 7rem; /* Adjust margin for text */
+        font-size: 0.7rem; /* Decrease font size */
+    }
+
+    .f-card h2 {
+        font-size: 0.9rem; /* Adjust size for h2 */
+    }
+
+    .f-card h3 {
+        font-size: 0.9rem; /* Adjust size for h3 */
+    }
+
+    .stars {
+        top: 5rem; /* Adjust stars position */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+@media (max-width: 375px) {
+    .feedback {
+        height: auto;
+        padding: 2rem 0; 
+    }
+    .f-card p {
+        margin-top: 6rem; /* Adjust margin for text */
+        font-size: 0.5rem; /* Decrease font size */
+    }
+
+}
+@media (max-width: 320px) {
+    .f-card {
+        width: 6rem;     
+    }
+
+}
